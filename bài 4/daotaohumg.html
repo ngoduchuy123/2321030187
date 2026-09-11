@@ -8,30 +8,126 @@
             display: flex;
 
         }
+
         .danh-sach-muc{
         /* bỏ dấu chấm của list*/
         list-style: none;
         display: flex;
         margin: 0px;
         }
+
         .muc{color: white;
             padding: 15px;
         /*font-weight:bold*/
         }
+
         a{
             color: white;
             text-decoration: none;}
+
         .khoi-trai{
-            background-color: blue;
             width: 20%;
             height: 500px;
+        /* để dùng viền dùng border
+        border sẽ có 3 tham số (độ dày - loại đường viền - màu sắc)*/
+            border-right: 1px solid  #2fa4e7;
         }
+
         .khoi-phai{
-            background-color: green;
+            
             width: 80%;
             height: 500px;
         }
+
         main {display: flex;}
+
+        .khoi-dang-nhap{
+            width: 90%;
+            height: 300px;
+            /* nếu margin là auto thì nó sẽ tự động căn*/
+            margin: 10px auto;
+        }
+        
+        input{
+            width: 100%;
+            padding: 5px 0;
+        }
+        
+        .quen-mk{
+            display: flex;
+            justify-content: flex-end;
+        }
+        .lien-ket-quen-mk{
+            color: blue;
+        }
+.danh-sach-tin{
+    display: flex;
+}
+
+        .tin{
+            width: 95%;
+            height: 300px;
+            margin: 20px auto;
+            border: 1px solid #2fa4e7;
+            border-radius: 10px;
+        }
+
+        .tin-tren{
+            width: 95%;
+            border-bottom: 1px solid #2fa4e7;
+            margin: auto;
+            display: flex;
+            justify-content: space-between;
+            padding: 10px;
+        }
+p{
+    margin:0
+}
+        h3{
+            margin: 0;
+        }
+        .xem-tiep{
+            color: #2fa4e7;
+            text-decoration: none;
+        }
+
+         button{
+        width: 100%;
+        padding: 3px 0;
+        margin-top: 5px;
+        border-radius: 5px;
+        padding: 5px 0;
+        border-radius: 5px;
+        border: 1px solid grey;
+        }
+        .dang-nhap1{
+            color: white;
+            background-color: #2fa4e7;
+        }
+        .dang-nhap2{
+            color: white;
+            background-color: #0078D4;
+        }
+       .bai-viet {
+    width: 25%;
+    margin-right: 20px;
+}
+
+.bai-viet-khoi-anh {
+    width: 100%;
+}
+
+.bai-viet-thoi-gian {
+    display: flex;
+    justify-content: flex-end;
+}
+
+img {
+    width: 100%;
+    height: 20vh;
+    border-radius: 10px;
+}
+
     </style>
 </head>
 <body>
@@ -39,16 +135,105 @@
 <!--thanh menu-->
         <nav class="menu">
             <ul class="danh-sach-muc">
-                <li class="muc"><a href="a">thực tập,đồ án</a></li>
-                <li class="muc"><a href="a">thủ tục 1 cửa</a></li>
-                <li class="muc"><a href="a">một cửa online</a></li>
-                <li class="muc"><a href="a">E-mail HUMG</a></li>
+                <li class="muc"><a href="#">thực tập,đồ án</a></li>
+                <li class="muc"><a href="#">thủ tục 1 cửa</a></li>
+                <li class="muc"><a href="#">một cửa online</a></li>
+                <li class="muc"><a href="#">E-mail HUMG</a></li>
             </ul>
         </nav>
 <!--nội dung chính-->
 <main>
-    <div class="khoi-trai">trái</div>
-    <div class="khoi-phai">phải</div>
+    <div class="khoi-trai">
+           <div class="khoi-dang-nhap">
+            <form action="">
+             <div class="thong-tin">
+               <p>tài khoản</p>
+               <input type="text">
+             </div>
+             <div class="thong-tin">
+                <p>mật khẩu</p>
+                <input type="password">
+             </div>
+             <div class="quen-mk">
+                <i><a class="lien-ket-quen-mk" href="#">quên mật khẩu</a></i>
+                 
+             </div>
+             <div class="chuc-nang-dang-nhap">
+                <button class="dang-nhap1">đăng nhập</button>
+                <button class="dang-nhap2">đăng nhập với microsoft</button>
+             </div>
+            </form>
+           </div>
+    </div>
+    <div class="khoi-phai">
+        <div class="tin">
+            <div class="tin-tren">
+              <h3 class="tieu-de">Tin tức</h3>
+              <p>
+                <a class="xem-tiep" href="#">xem tiếp</a>
+              </p>
+            </div>
+            <div class="danh-sach-tin">
+                    <div class="bai-viet">
+                        <div class="bai-viet-khoi-anh">
+                            <img src="../bài 4/1789127699358_5474334258192398069_g8359848794334393609_dff7cf0376bb3b32cd2e8155d453c24e.jpg" alt="">
+                        </div>
+                        <div class="bai-viet-thoi-gian">
+                             <p>05/05/2026</p>
+                        </div>    
+                        <div>
+                            về việc đăng kí thời lượng học tập
+                        </div>
+                    </div>
+                    <div class="bai-viet">
+                        <div class="bai-viet-khoi-anh">
+                            <img src="../bài 4/1789127699358_5474334258192398069_g8359848794334393609_dff7cf0376bb3b32cd2e8155d453c24e.jpg" alt="">
+                        </div>
+                        <div class="bai-viet-thoi-gian">
+                             <p>15/04/2026</p>
+                        </div>    
+                        <div>
+                            về việc nghỉ học
+                        </div>
+                    </div>
+                    <div class="bai-viet">
+                        <div class="bai-viet-khoi-anh">
+                            <img src="../bài 4/1789127699358_5474334258192398069_g8359848794334393609_dff7cf0376bb3b32cd2e8155d453c24e.jpg" alt="">
+                        </div>
+                        <div class="bai-viet-thoi-gian">
+                             <p>24/09/2024</p>
+                        </div>    
+                        <div>
+                            trường đại học mỏ địa chất đạt chứng nhận 
+                        </div>
+                    </div>
+            </div>
+        </div>
+         <div class="tin">
+                <!-- Tin trên -->
+                <div class="tin-tren">
+                    <h3 class="tieu-de">Thông báo</h3>
+                    <p>
+                        <a class="xem-tiep" href="">
+                            Xem tiếp >
+                        </a>
+                    </p>
+                </div>
+         </div>
+          <div class="tin">
+                <!-- Tin trên -->
+                <div class="tin-tren">
+                    <h3 class="tieu-de">Hướng dẫn</h3>
+                    <p>
+                        <a class="xem-tiep" href="">
+                            Xem tiếp >
+                        </a>
+                    </p>
+                </div>
+          </div>             
+    </div>
+    
+
 </main>
     
 </body>
