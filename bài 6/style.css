@@ -1,0 +1,30 @@
+body{
+    margin: 0;
+}
+
+.danh-sach-muc{
+    blist-style: none;
+    display: flex;
+    gap: 10px;
+    padding: 0;
+    background-color: red;
+    padding: 10px 20px;
+    border-radius: 20px
+}
+
+.muc{
+    list-style: none;
+}
+
+.banner{
+    height: 400px;
+    width: 60%;
+    margin: 20px auto;
+    background-color: red;
+}
+
+.danh-sach-kenh{
+    background-color: blue;
+    display: flex;
+}
+
