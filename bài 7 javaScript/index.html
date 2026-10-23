@@ -187,7 +187,7 @@
 
 
          var diem =4
-         if(diem <4 ){
+         if(diem ){
              document.writeln("F")
          }
           if(diem <6 ){
@@ -198,8 +198,66 @@
          }
           else{document.writeln(A)}
          
+
+        //object; var name = { }
+        var thongtinsinhvien = {
+            hoten: "Ngo Duc Huy",
+            tuoi:29,
+            gioitinh:true, //true: Nam, false: nữ
+            diachi:{
+                thanhpho: "Ha Noi",
+                phuong: "Dong Ngac",
+                duong:"Le Van Hien"
+            }
+        };
         
-        
+        var thongtinphim = {
+            ten: "mưa đỏ",
+            daodien: "Đặng Thái Nguyên",
+            nam: "2023",
+            theloai: "Lịch Sử",
+            thoiluon: 124,
+            dienvien:{
+                dienvienchinh:[ 
+                    "Đỗ Nhật Hoàng","Lê Hạ Anh","Steven Nguyễn"
+                ],
+                dienvienphu:[
+                    "Đỗ Nhật Hoàng","Lê Hạ Anh","Steven Nguyễn"
+                ]
+            }
+        }
+
+
+        //switch case
+        var d = new date()
+        var theday = d.getDay();
+        switch (theday){
+            case 5:
+                document.writeln("Finally Friday");
+                break;
+             case 6:
+                document.writeln("Super Saturday");
+                break;
+             case 0:
+                document.writeln("Sleepy Sunday");
+                break; 
+            default:
+                 case 5:
+                document.writeln("I'm looking forward to this weekend");
+                break      
+        }
+
+    for (var index = 1; index <=10; index++){
+        document.writeln("<br> hà há + index")
+    }
+
+    var danhsachsinhvien = ["Thuy","Mai","Tuan","Thang","Thao"];
+    document.writeln("<br> xin chào" + danhsachsinhvien[0]);
+    for(var i = 0; i < danhsachsinhvien.length; i++){
+        document.writeln("<br>" + i + "<br>")
+        document.writeln("xin chào" + danhsachsinhvien[1]);
+    }
+
       </script>
 
 <!--external JS-->
