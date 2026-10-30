@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>buổi 10</title>
+<style>
+main{
+    display: flex;
+}
+
+.trai{
+    display: flex;
+    width: 75%;
+    justify-content: center;
+    align-items: center;
+}
+ .phai{
+    width: 25%;
+    height: 500px;
+    border: 1px solid gray;
+    border-radius: 25px;
+ }
+
+ .video{
+    width: 90%;
+    height: 600px;
+   
+    border-radius: 20px;
+ }
+
+ h1{text-align: center;}
+
+ img{width: 30%;
+ margin-right: 10px;}
+
+ p{
+    width:75%;}
+.bai-hat{
+    width: 95%;
+    height: 90px;
+    margin: 10px auto;
+    display: flex;
+    align-items: center;
+}
+.bai-hat:hover{
+    background-color: gray;
+}
+.anh-bai{border-radius: 10px;}
+</style>
+</head>
+<body>
+    <main>
+        <div class="trai">
+           <div class="video">
+            <iframe class="video" width="100%" height="600px" src="https://www.youtube.com/embed/PagDM9mfVjo?si=lZ0ZmglV4KN7rXev" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+           </div>
+        </div>
+
+        <div class="phai">
+            <h1>Danh sách</h1>
+           <div class="danh-sach">
+            <div onclick="chonbai(1)" class="bai-hat">
+                <img class="anh-bai" src="../bài 10/ảnh/chúng ta của hiện tại.jpg">
+                <p>SƠN TÙNG M-TP | CHÚNG TA CỦA HIỆN TẠI | OFFICIAL MUSIC VIDEO</p>
+            </div>
+            <div onclick="chonbai(2)" class="bai-hat">
+                <img class="anh-bai" src="../bài 10/ảnh/con nhà nghèo.jpg">
+                <p>Con Nhà Nghèo - LEG</p>
+            </div>
+            <div onclick="chonbai(3)" class="bai-hat">
+                <img class="anh-bai" src="../bài 10/ảnh/không buông.jpg">
+                <p>Hngle - KHÔNG BUÔNG ft. Ari | Official Music Video</p>
+            </div>
+            <div onclick="chonbai(4)" class="bai-hat">
+                <img class="anh-bai" src="../bài 10/ảnh/tìm em.jpg">
+                <p>Hngle - Tìm em ft. Bảo Anh | Official Music Video</p>
+            </div>
+           </div>
+        </div>
+    </main>
+    <script>
+       var danhsachieu=[
+            {
+            id: 1,
+            ten:"SƠN TÙNG M-TP | CHÚNG TA CỦA HIỆN TẠI | OFFICIAL MUSIC VIDEO",
+            duongdananh:"../bài kiểm tra/ảnh/chúng ta của hiện tại.jpg",
+            linkyou:"https://www.youtube.com/embed/psZ1g9fMfeo?si=11zKRiydAZbz20zt"
+            },
+
+            {
+            id: 2,
+            ten:"Con Nhà Nghèo - LEG",
+            duongdananh:"../bài kiểm tra/ảnh/con nhà nghèo.jpg",
+            linkyou:"https://www.youtube.com/embed/2Yh15vv2nUY?si=sM9MNQEubbBlEFk6"
+            },
+
+            {
+            id: 3,
+            ten:"Hngle - KHÔNG BUÔNG ft. Ari | Official Music Video",
+            duongdananh:"../bài kiểm tra/ảnh/không buông.jpg",
+            linkyou:"https://www.youtube.com/embed/9UcQ7ddVjoc?si=CC3dyeC6UXqZyHP_"
+            },
+
+            {
+            id: 4,
+            ten:"Hngle - Tìm em ft. Bảo Anh | Official Music Video",
+            duongdananh:"../bài kiểm tra/ảnh/tìm em.jpg",
+            linkyou:"https://www.youtube.com/embed/gJAbDSse5WM?si=AXepdnXHpoiZBwuB"
+            }
+        ];
+           
+        function chonbai(id) {
+         for (let i=0; i < danhsachchieu.length;i++){
+         if(danhsachchieu[i].id=id){
+            document.getElementsByClassName("video")[0].src= danhsachchieu[i].linkyou;
+         }
+         }
+
+        }
+    </script>
+</body>
+</html>
+
+

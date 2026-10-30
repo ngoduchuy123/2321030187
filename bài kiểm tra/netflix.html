@@ -1,0 +1,113 @@
+<html lang="en">
+<head>
+
+    <title>Trang chủ - netfix</title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+<!--Đầu trang-->
+    <header>
+     <!--Danh mục-->
+       <nav class="danh-muc">
+            <ul class="danh-sach-muc">
+                <img class="logo" src="../bài kiểm tra/ảnh/logo.svg" alt="">
+                <li class="muc dang-chon"><a class="lien-ket-muc dang-chon" href="#"></a>Trang chủ</li>
+                <li class="muc"><a class="lien-ket-muc" href="#"></a>Nhân vật</li>
+                <li class="muc"><a class="lien-ket-muc" href="#"></a>series</li>
+                <li class="muc"><a class="lien-ket-muc" href="#"></a>Phim</li>
+                <li class="muc"><a class="lien-ket-muc" href="#"></a>Mới & Phổ biến</li>
+                <li class="muc"><a class="lien-ket-muc " href="#"></a>Netflix của tôi</li>
+                <li class="muc"><a class="lien-ket-muc " href="#"></a>Duyệt tìm theo ngôn ngữ</li>
+            </ul>
+       </nav>  
+       
+       <div class="chuc-nang">
+           <img class="avata" src="..//bài 5/1789728156354_5474334258192398069_g8359848794334393609_228cc5cbf8ab225e94d7a99f925f5970.jpg" alt="">
+       </div>
+    </header>
+<!--Nội dung chính trang-->
+    <main>
+       <div class="banner">
+           
+           <iframe width: 100%; height="600px" border-radius: 20px; class="banner-img" src="https://www.youtube.com/embed/Cj3ENSVogTo?si=ncs5xYQUrifDBcj_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          
+       </div>
+<!--thể loại-->
+       <div class="the-loai">
+           <div class="ten-the-loai"></div>
+            <h3><font size="5">phim</font></h3>
+          <div class="danh-sach-phim1">
+            <div onclick="chonphim(1)" class="phim">
+                <img src="../bài kiểm tra/ảnh/connan.jpg" alt="">
+            </div>
+            <div onclick="chonphim(2)" class="phim">
+                <img src="../bài kiểm tra/ảnh/doremon.jpg" alt="">
+            </div>
+            <div onclick="chonphim(3)" class="phim">
+                <img src="../bài kiểm tra/ảnh/kimetsu.jpg" alt="">
+            </div>
+            <div onclick="chonphim(4)" class="phim">
+                <img src="../bài kiểm tra/ảnh/one pice.jpg" alt="">
+            </div>
+            <div onclick="chonphim(5)" class="phim">
+                <img src="../bài kiểm tra/ảnh/quá nhanh quá nguy hểm.jpg" alt="">
+            </div>
+          </div>
+
+    </main>
+<!--Chân trang-->
+    <footer>
+    
+       
+    </footer>
+     <script>
+    var danhsachphim=[
+            {
+            id: 1,
+            ten:"",
+            duongdananh:"../bài kiểm tra/ảnh/connan.jpg",
+            linkyou:"src="//www.youtube.com/embed/-yUmgVLuAeU?si=kcRTs6gYBJOg7q00" title="YouTube video player"",
+            },
+            
+            {
+            id: 2,
+            ten:"",
+            duongdananh:"../bài kiểm tra/ảnh/doremon.jpg",
+            linkyou:"src="//www.youtube.com/embed/-yUmgVLuAeU?si=kcRTs6gYBJOg7q00" title="YouTube video player"",
+            },
+
+            {
+            id: 3,
+            ten:"",
+            duongdananh:"../bài kiểm tra/ảnh/kimetsu.jpg",
+            linkyou:""
+            },
+
+            {
+            id: 4,
+            ten:"",
+            duongdananh:"../bài kiểm tra/ảnh/one pice.jpg",
+            linkyou:""
+            },
+
+            {
+            id: 5,
+            ten:"",
+            duongdananh:"../bài kiểm tra/ảnh/quá nhanh quá nguy hểm.jpg",
+            linkyou:""
+            },
+
+        ];
+
+        function chonphim(id) {
+         for (let i=1; i = danhsachphim.length ;i++){
+         if(danhsachphim[i].id==id){
+            document.getElementsByClassName("video")[0].src=duongdananh[i].linkyou;
+         }
+         }
+
+        }
+</script>
+</body>
+</html>
